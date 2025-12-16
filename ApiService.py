@@ -6,7 +6,7 @@ class ApiService:
     _base_assets_url = ""
 
     def __init__(self):
-        _base_assets_url = f"{ConfigurationManager._topdesk_url}/tas/api/assetmgmt/assets"
+        ApiService._base_assets_url = f"{ConfigurationManager._topdesk_url}/tas/api/assetmgmt/assets"
 
     @staticmethod
     def create_dataset_asset(region: str, department: str):

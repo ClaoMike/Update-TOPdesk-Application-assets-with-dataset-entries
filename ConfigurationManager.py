@@ -34,4 +34,4 @@ class ConfigurationManager:
 
         _topdesk_username = os.getenv('TOPDESK_USERNAME')
         _topdesk_password = os.getenv('TOPDESK_PASSWORD')
-        _authentication = HTTPBasicAuth(_topdesk_username, _topdesk_password)
+        ConfigurationManager._authentication = HTTPBasicAuth(_topdesk_username, _topdesk_password)

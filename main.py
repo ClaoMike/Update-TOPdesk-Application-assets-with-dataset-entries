@@ -9,7 +9,7 @@ api = ApiService()
 apps = ApplicationsExcel()
 
 ### retrieve all assets (ids) ##########################################################################################
-application_assets = ApiService.get_assets_by_template_id(id=config._topdesk_application_template_id).get('results')
+application_assets = ApiService.get_assets_by_template_id(id=ConfigurationManager._topdesk_application_template_id).get('results')
 
 for asset in application_assets:
     asset_id = asset['id'] # extract id
