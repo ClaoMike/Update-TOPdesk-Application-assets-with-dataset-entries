@@ -30,8 +30,10 @@ class ApplicationsExcel:
             department_id = ConfigurationManager.departments[department]
 
             # create the dataset entry asset
+            print(f"      Generating entry asset for {region} & {department}")
             dataset_entry = ApiService.create_dataset_asset(region=region_id, department=department_id)
             dataset_entry_id = dataset_entry.get('data').get('unid') # extract its id
+            print(f"      Entry generated: {dataset_entry_id}")
             entries.append(dataset_entry_id)
 
         return entries
