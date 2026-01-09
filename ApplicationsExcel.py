@@ -16,7 +16,7 @@ class ApplicationsExcel:
         self.df = df
 
     def get_entries_where_name_is(self, name: str):
-        return self.df.loc[self.df["Name"] == name] # match the rows where Name matches the input
+        return self.df.loc[self.df["name"] == name] # match the rows where Name matches the input
 
     def generate_entries(self, name: str):
         entries = []

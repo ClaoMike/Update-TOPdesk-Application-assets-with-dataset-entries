@@ -8,7 +8,7 @@ class ConfigurationManager:
     _topdesk_application_template_id = "8413C3E6-DB89-4575-87AD-04677451CF48"
 
     regions = {
-        "GEU":      "",
+        "GEU":      "ed5338a1-7e8d-4ef5-976a-57f0149892d9",
         "Global":   "8a266530-cfbc-4468-9db3-38da3063bec3",
         "NA":       "0fd4120a-985e-449f-bb7b-87202db6b405",
         "OCE":      "29c182c7-95ab-4f6c-bd41-ab419cce9dac",
